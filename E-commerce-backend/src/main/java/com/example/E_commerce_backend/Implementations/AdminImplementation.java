@@ -1,9 +1,9 @@
-package com.example.E_commerce_backend.models.Implementations;
+package com.example.E_commerce_backend.Implementations;
 
 
-import com.example.E_commerce_backend.models.Entities.AdminModel;
-import com.example.E_commerce_backend.models.Jpa.AdminJpa;
-import com.example.E_commerce_backend.models.Repositories.AdminRepository;
+import com.example.E_commerce_backend.Models.AdminModel;
+import com.example.E_commerce_backend.jpa.AdminJpa;
+import com.example.E_commerce_backend.Repositories.AdminRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 

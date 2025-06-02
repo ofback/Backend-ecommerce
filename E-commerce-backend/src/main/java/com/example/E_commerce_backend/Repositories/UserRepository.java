@@ -1,6 +1,6 @@
-package com.example.E_commerce_backend.models.Repositories;
+package com.example.E_commerce_backend.Repositories;
 
-import com.example.E_commerce_backend.models.Entities.UserModel;
+import com.example.E_commerce_backend.Models.UserModel;
 
 import java.util.List;
 

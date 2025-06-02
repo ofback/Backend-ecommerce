@@ -1,10 +1,10 @@
-package com.example.E_commerce_backend.models.Entities;
+package com.example.E_commerce_backend.Models;
 
 import jakarta.persistence.*;
 
 @Entity
 @Table
-public class AdminModel {
+public class UserModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,15 +23,18 @@ public class AdminModel {
     @Column(name = "data_nascimento")
     private String dataNascimento;
 
-    public AdminModel() {
+    @Column(name = "senha")
+    private String senha;
+
+    public UserModel() {
     }
 
-    public AdminModel(String nome, int id, String email, String cpf, String dataNascimento) {
+    public UserModel(String nome, String email, String cpf, String dataNascimento, String senha) {
         this.nome = nome;
-        this.id = id;
         this.email = email;
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
+        this.senha = senha;
     }
 
     public String getNome() {
@@ -64,5 +67,13 @@ public class AdminModel {
 
     public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 }

@@ -1,9 +1,9 @@
-package com.example.E_commerce_backend.models.Implementations;
+package com.example.E_commerce_backend.Implementations;
 
 
-import com.example.E_commerce_backend.models.Entities.UserModel;
-import com.example.E_commerce_backend.models.Jpa.UserJpa;
-import com.example.E_commerce_backend.models.Repositories.UserRepository;
+import com.example.E_commerce_backend.Models.UserModel;
+import com.example.E_commerce_backend.jpa.UserJpa;
+import com.example.E_commerce_backend.Repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
