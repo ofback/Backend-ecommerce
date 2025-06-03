@@ -34,7 +34,7 @@ public class ProdutoModel {
         this.imagemUrl = imagemUrl;
     }
 
-    // Getters e Setters
+
 
     public int getId() {
         return id;
