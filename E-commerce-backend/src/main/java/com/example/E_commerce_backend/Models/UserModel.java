@@ -17,23 +17,15 @@ public class UserModel {
     @Column(name = "email")
     private String email;
 
-    @Column(name = "cpf")
-    private String cpf;
-
-    @Column(name = "data_nascimento")
-    private String dataNascimento;
-
     @Column(name = "senha")
     private String senha;
 
-    public UserModel() {
+    public UserModel(String nome, String email, String senha) {
     }
 
     public UserModel(String nome, String email, String cpf, String dataNascimento, String senha) {
         this.nome = nome;
         this.email = email;
-        this.cpf = cpf;
-        this.dataNascimento = dataNascimento;
         this.senha = senha;
     }
 
@@ -51,22 +43,6 @@ public class UserModel {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public String getDataNascimento() {
-        return dataNascimento;
-    }
-
-    public void setDataNascimento(String dataNascimento) {
-        this.dataNascimento = dataNascimento;
     }
 
     public String getSenha() {

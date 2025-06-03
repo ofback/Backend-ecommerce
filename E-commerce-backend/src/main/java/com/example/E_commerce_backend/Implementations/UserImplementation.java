@@ -44,9 +44,6 @@ public class UserImplementation implements UserRepository {
 
             userModelInDb.setNome(userModel.getNome());
             userModelInDb.setEmail(userModel.getEmail());
-            userModelInDb.setCpf(userModel.getCpf());
-            userModelInDb.setDataNascimento(userModel.getDataNascimento());
-
 
             this.userJpa.save(userModelInDb);
         }

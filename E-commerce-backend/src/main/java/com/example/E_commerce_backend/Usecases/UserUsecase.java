@@ -25,8 +25,6 @@ public class UserUsecase {
     public void criarUser(UserModel userModel) {
         UserModel admin = new UserModel(
                 userModel.getNome(),
-                userModel.getCpf(),
-                userModel.getDataNascimento(),
                 userModel.getEmail(),
                 userModel.getSenha()
         );
