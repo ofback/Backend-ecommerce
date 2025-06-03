@@ -15,11 +15,11 @@ public class FavoritoUsecase {
         this.favoritoRepository = favoritoRepository;
     }
 
-    public List<FavoritoModel> buscar() {
+    public List<FavoritoModel> listarTodos() {
         return favoritoRepository.buscar();
     }
 
-    public FavoritoModel searchByCode(int id) {
+    public FavoritoModel obterFavoritoPorId(int id) {
         return favoritoRepository.searchByCode(id);
     }
 

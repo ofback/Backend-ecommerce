@@ -19,7 +19,7 @@ public class AdminUsecase {
         return adminRepository.buscar();
     }
 
-    public AdminModel obterUsuarioPorId(int id) {
+    public AdminModel obterAdminPorId(int id) {
         return adminRepository.searchByCode(id);
     }
 

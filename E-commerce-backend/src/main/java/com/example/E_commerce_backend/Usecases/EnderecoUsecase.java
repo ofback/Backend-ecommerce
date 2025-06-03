@@ -15,11 +15,11 @@ public class EnderecoUsecase {
         this.enderecoRepository = enderecoRepository;
     }
 
-    public List<EnderecoModel> buscar() {
+    public List<EnderecoModel> listarTodos() {
         return enderecoRepository.buscar();
     }
 
-    public EnderecoModel searchByCode(int id) {
+    public EnderecoModel obterEnderecoPorId(int id) {
         return enderecoRepository.searchByCode(id);
     }
 
