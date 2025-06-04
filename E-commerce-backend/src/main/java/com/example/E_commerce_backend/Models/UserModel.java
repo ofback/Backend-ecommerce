@@ -3,7 +3,7 @@ package com.example.E_commerce_backend.Models;
 import jakarta.persistence.*;
 
 @Entity
-@Table
+@Table(name = "usuarios")
 public class UserModel {
 
     @Id
@@ -20,13 +20,17 @@ public class UserModel {
     @Column(name = "senha")
     private String senha;
 
-    public UserModel(String nome, String email, String senha) {
+    public UserModel() {
     }
 
-    public UserModel(String nome, String email, String cpf, String dataNascimento, String senha) {
+    public UserModel(String nome, String email, String senha) {
         this.nome = nome;
         this.email = email;
         this.senha = senha;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getNome() {
