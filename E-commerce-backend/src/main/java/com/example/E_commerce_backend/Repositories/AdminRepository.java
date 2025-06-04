@@ -7,8 +7,8 @@ import java.util.List;
 public interface AdminRepository {
     public AdminModel searchByCode(int code);
     public List<AdminModel> buscar();
-    public void addAdmin(AdminModel timesModel);
+    public void addAdmin(AdminModel adminModel);
     public void removeAdmin(int code);
-    public void updateAdmin(int code, AdminModel timesModel);
+    public void updateAdmin(int code, AdminModel adminModel);
     public boolean estaVazio();
 }

@@ -7,7 +7,7 @@ import java.util.List;
 public interface FavoritoRepository {
     public FavoritoModel searchByCode(int id);
     public List<FavoritoModel> buscar();
-    public void addFavorito(FavoritoModel favorito);
+    public void addFavorito(FavoritoModel favoritoModel);
     public void removeFavorito(int id);
     void updateFavorito(int id, FavoritoModel favoritoModel);
     public boolean estaVazio();
